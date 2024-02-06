@@ -1,13 +1,66 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: gill sans,Arial, Helvetica, sans-serif;
+  color: snow;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 25% 50% 25%;
+  background-color: #ffa72bdc;
+}
+
+.toDo--container{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: #232B2B;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toDo--container{
+    box-shadow: 
+        0 0 0 5px rgba(0, 0, 0, 0.1), /* Top */
+        0 0 0 5px rgba(0, 0, 0, 0.1), /* Right */
+        0 0 0 5px rgba(0, 0, 0, 0.1), /* Bottom */
+        0 0 0 5px rgba(0, 0, 0, 0.1); /* Left */
+}
+
+
+input{
+  background-color: black;
+  height: 30px;
+  border-radius: 10px;
+  border: 0;
+  color: beige;
+}
+
+.btn--add{
+  margin-left: 20px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #8F9779;
+  height: 25px;
+
+}
+
+.btn--delete{
+  border: 0;
+  border-radius: 4px;
+  background-color: #a01d3d;
+  height: 25px;
+  position: relative;
+  bottom: 20px;
+  left: 80px;
+}
+
+li{
+  text-align: left;
 }
